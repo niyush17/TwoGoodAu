@@ -1,0 +1,512 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+*::selection{
+    color:#fff;
+    background-color: #000;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #F7F7F7
+}
+
+
+#cursor{
+    height: 180px;
+    width: 180px;
+    background-color: rgba(128, 128, 128, 0.327);
+    position: fixed;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
+}
+
+html,body{
+width:100%;
+height:100%;
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 3vw;
+}
+
+#main{
+    padding-top: 20vh;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 99;
+    padding:4vw;
+}
+
+#nav-part1{
+    /* background-color: red; */
+    height: 82px;
+    overflow: hidden;
+}
+
+#nav-part1 svg{
+    display: block;
+}
+
+
+#nav-part1 img {
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5vw;
+}
+
+#nav-part2 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:300;
+}
+
+#page1 h1 {
+    font-size: 15.2vw;
+    font-family: futura;
+    text-transform: uppercase;
+    line-height: 14vw;
+    letter-spacing: -8px;
+}
+
+#video-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#nav-part3{
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:5vw;
+    background-color: #F7F7F7;
+    padding: 1vw;
+    border-radius: 50px;
+}
+
+#nav-part3 i{
+    font-size: 1.2vw;
+}
+
+#video-container #play{
+    padding: 3.5vw 3.5vw;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    scale:0;
+    opacity: 0;
+}
+
+#section{
+    display: flex;
+    padding: 3vw;
+    gap:10vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#section h1{
+    text-transform: uppercase;
+    font-family: futura;
+    width:100%;
+    font-size: 3.4vw;
+}
+
+#section #details p{
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 1vw;
+    border-top:1px solid black;
+}
+
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2vw;
+    padding: 1vw;
+    font-weight: 200;
+}
+
+#page2 .elem{
+    height: 100%;
+    width: 31%;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .elem .dets{
+    height:60px;
+    border-radius: 50px;
+    width:70%;
+    background-color:#EDE7AB;
+    position: absolute;
+    padding:2vw 1vw;
+    transition: all 0.5s ease;
+    text-align: start;
+    overflow: hidden;  
+    transition: height 0.3s ease;  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+#page2 .elem .dets img {
+    width: 0;  
+    height: auto;
+}
+
+#page2 .elem .dets:hover {
+    height: 200px;  
+}
+
+#page2 .elem .dets:hover img {
+    height: 100px;
+    width: 100px;  
+}
+
+#page2 .elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale:1;
+}
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child{
+    height: 54vh;
+    width: 38vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child img{
+    height: 100%;
+}
+
+
+#page4{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top:2px solid #dadada;
+}
+
+.details p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page4 h1{
+    text-align: center;
+    font-size: 4.5vw;
+    font-family: futura;
+    text-transform: uppercase;
+    width: 70%;
+    padding: 4vw;
+    letter-spacing: -4px;
+}
+
+#page5{
+    min-height: 70vh;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.9vw;
+    border-top: 3px solid #dadada;
+}
+
+#page5 .links h4{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.97vw;
+}
+
+.links ul li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.links2 ul li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links2 h4{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.97vw;
+}
+#copyright{
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav-part2 li {
+    list-style: none;
+}
+
+#nav-part3 li {
+    list-style: none;
+}
+
+#sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width:250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.479);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:2vw;
+    padding:1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sidebar li {
+    list-style: none;
+}
+#sidebar li:hover{
+    background-color: gray;
+    color: white;
+}
+
+#sidebar a{
+    text-decoration: none;
+    color:black;
+    width: 100%;
+    padding: 2vw;
+}
+
+#sidebar a:hover{
+    background-color: grey;
+    color: white;
+}
+
+
+@media (max-width:600px) {
+
+    #section h1{
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    #sidebar{
+        width: 90%;
+    }
+
+    #sidebar i {
+        font-size: 4vw;
+    }
+
+
+
+    #nav-part1 #twogood{
+        width: 19vw;
+    }
+
+    #nav-part1 #twogoodlogo{
+        width: 12vw;
+    }
+
+    .details p {
+        font-size: 3vw;
+    }
+
+    #section #details p {
+        width: 94%;
+        text-align: center;
+        line-height: 1.6;
+    }
+    #nav-part2{
+        display: none;
+    }
+
+    #page1{
+        min-height: 50vh;
+        width: 100%;
+        position: relative;
+        padding: 0 3vw;
+    }
+
+    #page1 h1 {
+        font-size: 15.2vw;
+        line-height: 14vw;
+        letter-spacing: -4px;
+    }
+    #nav-part3 i {
+        font-size:5vw;
+    }
+
+    #nav-part3{
+        display: block;
+    }
+    #nav-part3{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap:10vw;
+    }
+    #video-container{
+        height: 25vh;
+        margin-top: 3vw;
+    }
+
+    #section{
+        flex-direction: column;
+    }
+
+    #video-container #play{
+        padding: 9vw 7vw;
+        font-size: 4.5vw;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        scale:1;
+        opacity: 1;
+    }
+    #page2{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5vw 3vw;
+        border-top:1px solid black;
+        /* background-color: red; */
+    }
+    
+    #page2 .elem{
+        min-height: 70vh;
+        width: 100%;
+        /* background-color: red; */
+        overflow: hidden;
+        margin-bottom:3vw;
+        object-fit: cover;
+    }
+    #page2 .elem .dets{
+        height:40px;
+        border-radius: 50px;
+        width:70%;
+        background-color:#EDE7AB;
+        position: absolute;
+        padding:2vw 1vw;
+        transition: all 0.5s ease;
+        text-align: start;
+    }
+    #page3{
+        flex-direction: column;
+    }
+
+    .child img{
+        height: 100%;
+        padding:10vw;
+    }
+
+    #page4{
+        min-height: 70vh;
+    }
+
+    #page4 h1 {
+        font-size: 6vw;
+        width: 100%;
+        letter-spacing: 0px;
+        padding: 6vw;
+    }
+
+    #page5{
+        min-height: 48vh;
+        /* background-color: aqua; */
+        align-items: center;
+        border-top: 3px solid #dadada;
+        text-align: start;
+        flex-wrap: wrap;
+        padding: 6vw;
+    }
+
+    #twogoodfooter {
+        width: 25vw;
+        padding: 3vw;
+        margin-right: 10vw;
+    }
+
+    #page5 .links{
+        padding:3vw;
+    }
+
+    #page5 .links2{
+        padding:3vw
+    }
+
+
+}
